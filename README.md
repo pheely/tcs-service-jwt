@@ -65,3 +65,20 @@ The response will be:
 "level":"TWO"},{"branch":{"transitNum":"80002","name":"SCOTIA PLAZA"},"role":"CUSTOMER_SERVICE",
 "level":"THREE"}],"authorities":[]}
 ```
+
+Access content available only to an admin user
+Use the generated token as the value of the Bearer in the Authorization header as follows: 
+```shell
+curl http://localhost:8080/tcs/users -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidGNzcmVzb3VyY2VzaWQiXSwidXNlcl9uYW1lI
+joiOTk5OTk5OSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE1MDQ2NjQzNjEsImF1dGhvcml0aWV
+zIjpbIlNUQU5EQVJEX1VTRVIiLCJBRE1JTl9VU0VSIl0sImp0aSI6IjhmYmIyNjRjLWExNjUtNDZhNC1hYjFjL
+WQwYWFiNjIwMjM0ZCIsImNsaWVudF9pZCI6InRjc2NsaWVudGlkIn0.vfwVbMlJzhPzTjUzgr5ex_F4tF8wxdD
+Bdx9gTViuBNs"
+```
+The response will be:
+```shell
+[{"id":1,"username":"1234567","firstName":"Philip","lastName":"Yang","roles":[{"id":1,
+"roleName":"STANDARD_USER","description":"Standard User - Has no admin rights"}]},{"id":2,"username":"9999999","firstName":"Admin","lastName":"Admin","roles":[{"id":1,
+"roleName":"STANDARD_USER","description":"Standard User - Has no admin rights"},
+{"id":2,"roleName":"ADMIN_USER","description":"Admin User - Has permission to perform admin tasks"}]}]
+```
