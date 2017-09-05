@@ -80,7 +80,8 @@ Bdx9gTViuBNs"
 The response will be:
 ```shell
 [{"id":1,"username":"1234567","firstName":"Philip","lastName":"Yang","roles":[{"id":1,
-"roleName":"STANDARD_USER","description":"Standard User - Has no admin rights"}]},{"id":2,"username":"9999999","firstName":"Admin","lastName":"Admin","roles":[{"id":1,
+"roleName":"STANDARD_USER","description":"Standard User - Has no admin rights"}]},
+{"id":2,"username":"9999999","firstName":"Admin","lastName":"Admin","roles":[{"id":1,
 "roleName":"STANDARD_USER","description":"Standard User - Has no admin rights"},
 {"id":2,"roleName":"ADMIN_USER","description":"Admin User - Has permission to perform admin tasks"}]}]
 ```
