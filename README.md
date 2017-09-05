@@ -48,7 +48,8 @@ Lh3XpoE0EZ6ai644jINbPaexNfyHiIVJR9lQTfMyU","token_type":"bearer","expires_in":43
 Access content available to all authenticated users
 Use the generated token as the value of the Bearer in the Authorization header as follows: 
 ```shell
-curl http://localhost:8080/tcs/profile/1234567 -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidGNzcmVzb3VyY2VzaWQiXSwidXNlcl9uYW1
+curl http://localhost:8080/tcs/profile/1234567 -H "Authorization: Bearer
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidGNzcmVzb3VyY2VzaWQiXSwidXNlcl9uYW1
 lIjoiMTIzNDU2NyIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE1MDQ2NjQxMDcsImF1dGhvcml
 0aWVzIjpbIlNUQU5EQVJEX1VTRVIiXSwianRpIjoiM2JhMThmNzItMDU2OS00ZjM3LThkZDYtNTIwMzM1YmM
 4ODA0IiwiY2xpZW50X2lkIjoidGNzY2xpZW50aWQifQ.gfSYLMAwu7j2txkmwH0Rj8TbRVpZS1YNPYzQOryk
@@ -69,7 +70,8 @@ The response will be:
 Access content available only to an admin user
 Use the generated token as the value of the Bearer in the Authorization header as follows: 
 ```shell
-curl http://localhost:8080/tcs/users -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidGNzcmVzb3VyY2VzaWQiXSwidXNlcl9uYW1lI
+curl http://localhost:8080/tcs/users -H "Authorization: Bearer
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidGNzcmVzb3VyY2VzaWQiXSwidXNlcl9uYW1lI
 joiOTk5OTk5OSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE1MDQ2NjQzNjEsImF1dGhvcml0aWV
 zIjpbIlNUQU5EQVJEX1VTRVIiLCJBRE1JTl9VU0VSIl0sImp0aSI6IjhmYmIyNjRjLWExNjUtNDZhNC1hYjFjL
 WQwYWFiNjIwMjM0ZCIsImNsaWVudF9pZCI6InRjc2NsaWVudGlkIn0.vfwVbMlJzhPzTjUzgr5ex_F4tF8wxdD
